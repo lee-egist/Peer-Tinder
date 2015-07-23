@@ -37,6 +37,7 @@ how to identify the class for our app
   * what does the app "need" to do what problem are we trying to solve?
 
 resource - defining requirements - video
+
 2. describe application - build a narrative in plan language to describe how the app works
   * use case  
   * user stories
