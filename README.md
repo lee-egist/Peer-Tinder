@@ -38,16 +38,16 @@ how to identify the class for our app
 
   resource - defining requirements - video
 
-2. describe application - build a narrative in plan language to describe how the app works
+2. Describe application - build a narrative in plan language to describe how the app works
   * use case  
   * user stories
 
-3. identify most import objects
+3. Identify most import objects
   * use the stories/use cases to pick out the most import 'things' in the app and discard everything else
   * Minimum Value Product
 
-4. describe interaction of these objects
+4. Describe interaction of these objects
   * formally describe the interactions of those objects
 
-5. create class diagram
+5. Create class diagram
   * visual representation of the class we need.
