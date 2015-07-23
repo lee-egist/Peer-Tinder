@@ -34,19 +34,19 @@ DBC pairing app
 how to identify the class for our app
 ####what class do we need and what do these classes do?####
 1. Gather application requirements - 
-what does the app *need* to do what problem are we trying to solve?
+  * what does the app "need" to do what problem are we trying to solve?
 
-defining requirements - video
-2. describe application
-build a narrative in plan language to describe how the app works
-*use case  
-*user stories
+resource - defining requirements - video
+2. describe application - build a narrative in plan language to describe how the app works
+  * use case  
+  * user stories
 
 3. identify most import objects
-use the stories to pick at the most import things in the app and discard everything else
+  * use the stories/use cases to pick out the most import 'things' in the app and discard everything else
+  * Minimum Value Product
 
 4. describe interaction of these objects
-formally describe the interactions of those objects
+  * formally describe the interactions of those objects
 
 5. create class diagram
-visual representation of the class we need.
+  * visual representation of the class we need.
