@@ -17,6 +17,17 @@ DBC pairing app
 
 ### Use case scenerios ###
 
+ * a user should be able to sign up
+ * a user should be able to login in
+ * a user should be able to log out
+ * a user should be able to input a challenge 
+ * a user should be able to input a schedule
+ * a user should be able to request a pair session
+ * a user should be able to see challenges that fit their schedule
+ * a user should be able to swipe left to skip
+ * a user should be able to swipe right to pair
+ * a user should be able to view notifications
+
 
 
 ##Questions##
