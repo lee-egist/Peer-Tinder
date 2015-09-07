@@ -27,6 +27,7 @@ DBC pairing app
  * a user should be able to swipe left to skip
  * a user should be able to swipe right to pair
  * a user should be able to view notifications
+ * a user should be able to favorite a pairing partner
 
 
 
