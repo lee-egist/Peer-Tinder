@@ -1,0 +1,28 @@
+<%= form_for :bootcoder,  url: {action: "create", controller: "bootcoder"} do |f| %>
+
+<% if @bootcoder.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@bootcoder.errors.count, "error") %> prohibited
+        this article from being saved:
+      </h2>
+      <ul>
+        <% @bootcoder.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<%= f.label :handle %><br>
+<%= f.text_field :handle %><br>
+<%= f.label :email %><br>
+<%= f.text_field :email %><br>
+<%= f.label :phone %><br>
+<%= f.text_field :phone %><br>
+<%= f.label :password %><br>
+<%= f.password_field :password %><br>
+<%= f.label :password_confirmation, "Confirmation" %><br>
+<%= f.password_field :password_confirmation %><br>
+<%= f.submit %>
+<% end %>
