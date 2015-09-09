@@ -1,4 +1,6 @@
 # Peer-Tinder
+
+The goal of peer tinder is to enable students in phase 0 of dbc to find good pairing sessions that align with there lifestyle.
 DBC pairing app
 
 ###brainstormed so far###
