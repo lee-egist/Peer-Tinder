@@ -1,12 +1,24 @@
 Rails.application.routes.draw do
 
-  resources :bootcoder
+
+  get 'sessions/new'
+
+  get 'sessions/create'
+
+  get 'sessions/destroy'
+  get 'sessions/new_coder'
+  post 'sessions/new_coder', to: 'sessions#create'
+  post 'bootcoder/new', to: 'bootcoder#create'
+
+  resources :bootcoder do
+    resources :pairing_sessions, as: 'pairings'
+  end
   get 'welcome/signup'
+  root 'welcome#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

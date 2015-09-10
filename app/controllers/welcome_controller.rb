@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
-  def signup
-    @bootcoder = Bootcoder.new
+
+  def new 
   end
 end
