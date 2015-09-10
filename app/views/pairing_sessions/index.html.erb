@@ -1,0 +1,7 @@
+<h1>your pairing sessions</h1>
+<% @pairings.each do |pairing| %>
+  <div>
+  pairing with : <%= pairing.pair_id %>
+  On date : <%= pairing.session_date %>
+  </div>
+  <% end %>
