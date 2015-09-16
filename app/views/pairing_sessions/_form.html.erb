@@ -1,3 +1,22 @@
 <%= form_for :pairing_sessions do |f| %>
-  <%= f.datetime_field :session_date %>
+<table>
+  <tr>
+    <td>
+<%= f.label :session_date %></td>
+<td>
+  <%= f.datetime_field :session_date, placeholder: "YYYY-MM-DD-HH-MM-SS"%></td>
+</tr>
+<tr>
+  <td>
+  <%= f.label :challenge_id %></td>
+  <td>
+  <%= f.select :challenge_id, options_for_select(nestOptionsArray) %></td>
+</tr>
+<tr>
+  <td></td>
+<td colspan="2">
+  <%= f.submit "Save" %>
+</td>
+</tr>
+</table>
 <% end %>

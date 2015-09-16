@@ -2,7 +2,8 @@ class SessionsController < ApplicationController
 
   # login form
   def new
-    render partial: '/bootcoder/form'
+    @bootcoder =Bootcoder.new
+    redirect_to new_bootcoder_path
   end
 
   # create a session from login info

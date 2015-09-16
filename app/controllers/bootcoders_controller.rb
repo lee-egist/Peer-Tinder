@@ -1,4 +1,4 @@
-class BootcoderController < ApplicationController
+class BootcodersController < ApplicationController
   before_action :set_coder, only: [:show, :edit, :update, :destroy]
   def index
     @bootcoder = Bootcoder.all

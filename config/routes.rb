@@ -1,17 +1,10 @@
 Rails.application.routes.draw do
 
 
-  get 'sessions/new'
-
-  get 'sessions/create'
-
-  get 'sessions/destroy'
-  get 'sessions/new_coder'
-  post 'sessions/new_coder', to: 'sessions#create'
-  post 'bootcoder/new', to: 'bootcoder#create'
-
-  resources :bootcoder do
-    resources :pairing_sessions, as: 'pairings'
+  resource :session
+  resources :challenges
+  resources :bootcoders do
+    resources :pairing_sessions, shallow: true
   end
   get 'welcome/signup'
   root 'welcome#index'

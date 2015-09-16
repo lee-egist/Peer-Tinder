@@ -11,10 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150910021905) do
+ActiveRecord::Schema.define(version: 20150916051438) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "availabilities", force: true do |t|
+    t.integer  "bootcoder_id"
+    t.integer  "day_id"
+    t.integer  "hour_id"
+    t.string   "frequency"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "availabilities", ["bootcoder_id"], name: "index_availabilities_on_bootcoder_id", using: :btree
 
   create_table "bootcoders", force: true do |t|
     t.string   "handle"
@@ -29,6 +40,19 @@ ActiveRecord::Schema.define(version: 20150910021905) do
   create_table "challenges", force: true do |t|
     t.string   "name"
     t.integer  "time_length"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "days", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "hours", force: true do |t|
+    t.string   "hrf"
+    t.string   "suffix"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

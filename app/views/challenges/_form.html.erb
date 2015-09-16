@@ -1,0 +1,16 @@
+<%= form_for :challenge do |f| %>
+<table>
+  <tr>
+    <td><%= f.label :name %></td>
+    <td><%= f.text_field :name %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :time_length %></td>
+    <td><%= f.text_field :time_length %></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td colspan="2"><%= f.submit %></td>
+  </tr>
+</table>
+<% end %>
